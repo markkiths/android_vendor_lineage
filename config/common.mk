@@ -201,6 +201,13 @@ else
     LINEAGE_VERSION_MAINTENANCE := 0
 endif
 
+# Face Unlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
+
 # Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
 ifndef LINEAGE_BUILDTYPE
