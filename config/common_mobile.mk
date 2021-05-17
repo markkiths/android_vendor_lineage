@@ -19,7 +19,9 @@ PRODUCT_PACKAGES += \
     Etar \
     Jelly \
     Profiles \
-    Seedvault
+    Seedvault \
+    StitchImage \
+    StitchImageService
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
